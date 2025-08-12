@@ -1,61 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마실 파크골프 울산점</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9f9f9; }
-        header { background: #2e7d32; color: white; padding: 1rem 0; text-align: center; }
-        nav { background: #1b5e20; color: white; padding: 0.5rem; text-align: center; }
-        nav a { color: white; text-decoration: none; margin: 0 10px; font-weight: bold; }
-        .container { padding: 20px; max-width: 900px; margin: auto; background: white; border-radius: 8px; }
-        footer { background: #2e7d32; color: white; text-align: center; padding: 1rem; margin-top: 20px; }
-        .contact { background: #f1f1f1; padding: 10px; border-radius: 8px; }
-        h2 { color: #2e7d32; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>마실파크골프 울산점</title>
+  <meta name="description" content="스크린 파크골프 & 용품 전문점 | 울산 중구 젊음의2거리 11 | 052-248-2340" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Apple SD Gothic Neo, Noto Sans KR, sans-serif; }
+    .card { border-radius: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,.06); border: 1px solid #e5e7eb; background:#fff; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; border-radius: 1rem; padding:.5rem 1rem; font-weight:600; }
+    .btn-primary { background:#059669; color:#fff; }
+    .btn-outline { border:1px solid #cbd5e1; }
+  </style>
 </head>
-<body>
-
-    <header>
-        <h1>마실 파크골프 울산점</h1>
-        <p>울산 중구 젊음의2거리 11, 1층~3층</p>
-    </header>
-
-    <nav>
-        <a href="#about">소개</a>
-        <a href="#benefit">특징</a>
-        <a href="#contact">문의</a>
-    </nav>
-
-    <div class="container">
-        <section id="about">
-            <h2>🏌 마실 파크골프 소개</h2>
-            <p>마실 파크골프 울산점은 남녀노소 누구나 즐길 수 있는 실내 파크골프 시설입니다. 
-               편리한 위치와 쾌적한 환경에서 파크골프의 매력을 느껴보세요.</p>
-        </section>
-
-        <section id="benefit">
-            <h2>🌟 시설 특징</h2>
-            <ul>
-                <li>초보자도 쉽게 배울 수 있는 레슨</li>
-                <li>전문 강사진과 친절한 안내</li>
-                <li>실내 쾌적한 환경, 최신 장비 구비</li>
-                <li>가족, 친구, 동호회 모두 환영</li>
-            </ul>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>📞 문의하기</h2>
-            <p>📍 주소: 울산 중구 젊음의2거리 11, 1층~3층</p>
-            <p>📱 파크골프: 052-248-2340</p>
-            <p>📱 흙침대: 052-297-0117</p>
-        </section>
+<body class="bg-gradient-to-b from-emerald-50 to-white text-slate-900">
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-2xl bg-emerald-600"></div>
+        <span class="font-semibold tracking-tight">마실파크골프 울산점</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-emerald-700">소개</a>
+        <a href="#prices" class="hover:text-emerald-700">요금</a>
+        <a href="#shop" class="hover:text-emerald-700">용품</a>
+        <a href="#events" class="hover:text-emerald-700">대회·행사</a>
+        <a href="#gallery" class="hover:text-emerald-700">갤러리</a>
+        <a href="#contact" class="hover:text-emerald-700">문의·예약</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary">바로 문의</a>
     </div>
+  </header>
 
-    <footer>
-        <p>© 2025 마실 파크골프 울산점. All Rights Reserved.</p>
-    </footer>
+  <section id="top" class="max-w-6xl mx-auto px-4 py-14 md:py-20">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight">
+          실내에서도 시원하게, <span class="text-emerald-700">파크골프</span>의 재미를!
+        </h1>
+        <p class="mt-4 text-slate-600" id="heroSubtitle">
+          스크린 파크골프 & 용품 전문점 — 초보부터 상급자까지 누구나!
+        </p>
+        <div class="mt-6 flex gap-3">
+          <a href="#prices" class="btn btn-primary">이용요금 보기</a>
+          <a href="#visit" class="btn btn-outline">오시는 길</a>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-600" id="quickFacts"></div>
+      </div>
+      <div>
+        <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg bg-slate-200">
+          <img id="heroImage" src="./assets/hero.jpg" alt="Masil Park Golf Ulsan" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="about" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="md:col-span-2 card p-6">
+        <h2 class="text-2xl font-semibold">매장 소개</h2>
+        <p class="mt-3 text-slate-700" id="aboutText"></p>
+        <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm" id="features"></ul>
+      </div>
+      <div class="card p-6">
+        <h3 class="text-xl font-semibold">기본 정보</h3>
+        <div class="mt-3 space-y-2 text-sm" id="basics"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="card p-6">
+      <h2 class="text-2xl font-semibold">이용 요금</h2>
+      <div id="priceTables" class="mt-4 grid md:grid-cols-2 gap-6"></div>
+      <p class="mt-3 text-xs text-slate-500">* 요금은 변동될 수 있습니다.</p>
+    </div>
+  </section>
+
+  <section id="shop" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="card p-6">
+      <h2 class="text-2xl font-semibold">용품 전문점</h2>
+      <p class="mt-3 text-slate-700" id="shopText"></p>
+      <ul class="mt-4 list-disc pl-5 text-sm" id="shopBullets"></ul>
+    </div>
+  </section>
+
+  <section id="events" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="card p-6">
+      <h2 class="text-2xl font-semibold">대회·행사</h2>
+      <div id="eventList" class="mt-4 grid md:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <section id="gallery" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="card p-6">
+      <h2 class="text-2xl font-semibold">갤러리</h2>
+      <div id="galleryGrid" class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-6xl mx-auto px-4 py-8">
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card p-6" id="visit">
+        <h2 class="text-2xl font-semibold">문의·예약</h2>
+        <div class="mt-3 text-slate-700 space-y-2" id="contactInfo"></div>
+        <div class="mt-4">
+          <a id="callBtn" class="btn btn-primary" href="#">전화하기</a>
+        </div>
+      </div>
+      <div class="card p-6">
+        <h3 class="text-xl font-semibold">오시는 길</h3>
+        <p class="mt-2 text-sm" id="addressLine"></p>
+        <div class="mt-3 aspect-[4/3] bg-slate-100 rounded-xl overflow-hidden">
+          <img src="./assets/map-placeholder.jpg" alt="map" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-slate-500">
+      © <span id="year"></span> 마실파크골프 울산점 — All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    async function loadJSON(path){const r=await fetch(path); if(!r.ok) throw new Error('load fail '+path); return r.json();}
+    const el=(t,c,h)=>{const e=document.createElement(t); if(c) e.className=c; if(h!==undefined) e.innerHTML=h; return e;};
+    (async()=>{
+      const [site, prices, gallery, events] = await Promise.all([
+        loadJSON('./data/site.json'),
+        loadJSON('./data/prices.json'),
+        loadJSON('./data/gallery.json'),
+        loadJSON('./data/events.json'),
+      ]);
+      document.querySelector('#heroSubtitle').textContent = site.heroSubtitle;
+      document.querySelector('#heroImage').src = site.heroImage || './assets/hero.jpg';
+      const quick = document.querySelector('#quickFacts');
+      [ '운영시간 '+site.hours, '예약 '+site.reservation, '전화 '+site.phone ]
+        .forEach(t=>quick.appendChild(el('span','inline-flex items-center rounded-full border border-slate-300 px-3 py-1',t)));
+      document.querySelector('#aboutText').textContent = site.about;
+      const feat = document.querySelector('#features');
+      site.features.forEach(f=>{ const li=el('li','flex items-start gap-2'); li.appendChild(el('span','mt-1.5 w-2 h-2 rounded-full bg-emerald-600')); li.appendChild(el('span','',f)); feat.appendChild(li); });
+      const basics = document.querySelector('#basics');
+      ['주소: '+site.address, '전화: '+site.phone, '운영시간: '+site.hours, '예약: '+site.reservation].forEach(t=>basics.appendChild(el('div','',t)));
+      const pRoot = document.querySelector('#priceTables');
+      prices.tables.forEach(t=>{ const card=el('div','card p-5'); card.appendChild(el('h3','text-xl font-semibold',t.title)); const ul=el('ul','mt-3 space-y-2'); t.items.forEach(i=>ul.appendChild(el('li','flex justify-between text-sm', `<span>${i.name}</span><span class="font-semibold">${i.price}</span>`))); card.appendChild(ul); if(t.note){card.appendChild(el('p','mt-2 text-xs text-slate-500',t.note));} pRoot.appendChild(card); });
+      document.querySelector('#shopText').textContent = site.shopText;
+      const shopUl = document.querySelector('#shopBullets');
+      site.shopBullets.forEach(b=>shopUl.appendChild(el('li','',b)));
+      const ev = document.querySelector('#eventList');
+      events.list.slice(0,3).forEach(ei=>{ const card=el('div','card p-4 flex flex-col'); const img=el('img','w-full aspect-video object-cover rounded-xl'); img.src=ei.image; img.alt=ei.title; card.appendChild(img); card.appendChild(el('div','mt-3 text-xs text-slate-500', ei.date)); card.appendChild(el('div','text-base font-semibold', ei.title)); card.appendChild(el('div','mt-1 text-sm text-slate-600', ei.excerpt)); ev.appendChild(card); });
+      const gg = document.querySelector('#galleryGrid');
+      gallery.images.forEach(src=>{ const img=el('img','w-full h-full object-cover rounded-xl'); img.src=src; gg.appendChild(img); });
+      document.querySelector('#addressLine').textContent = site.address;
+      const contact = document.querySelector('#contactInfo');
+      contact.appendChild(el('div','', '전화: '+site.phone));
+      contact.appendChild(el('div','', '운영시간: '+site.hours));
+      contact.appendChild(el('div','', '예약 안내: '+site.reservation));
+      document.querySelector('#callBtn').href = 'tel:'+site.phone.replaceAll('-','');
+      document.querySelector('#year').textContent = new Date().getFullYear();
+    })().catch(e=>{ console.error(e); alert('데이터 로드 오류: '+e.message); });
+  </script>
 </body>
 </html>
